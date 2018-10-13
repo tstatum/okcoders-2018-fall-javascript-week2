@@ -14,7 +14,7 @@
         var color = "crimson";
         function myMessage(){
         // var message = "this is a message";
-        var one = document.getElementById("one");
+        var one = document.getElementById("one").focus();
         var newListItem = one.value;
         one.value = " ";
         
@@ -23,13 +23,13 @@
         // document.title = newTitle;
         
        var list =  msg.innerHTML;
-       document.getElementById("msg").innerHTML = list + '<li style=background:' + color + '">' + newListItem + '</li>'
+       document.getElementById("msg").innerHTML = list + '<li style="background:' + color +  '">' + newListItem + "</li>";
        if(color === "crimson"){
            color = "orange";
        } else {
            color = "crimson";
        }
-       msg.style="background:" + color;
+       
         }
     </script>
 </html>
