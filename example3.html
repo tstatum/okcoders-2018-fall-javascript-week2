@@ -3,15 +3,33 @@
         <title> My JavaScript Website</title>
     </head>
     <body>
+        <h2 id="pageTitle"> This is my Title</h2>
+        <ul id="msg">
+            <li> This is my message.</li> 
+            </ul>
         <input type="text" id="one">
-        <input type="text" id="two">
         <button onclick="myMessage()">Click Me!</button>
     </body>
     <script>
+        var color = "crimson";
         function myMessage(){
-        var message = "this is a message";
-    console.log(message);
-    alert(message);
+        // var message = "this is a message";
+        var one = document.getElementById("one");
+        var newListItem = one.value;
+        one.value = " ";
+        
+        console.log(newListItem);
+
+        // document.title = newTitle;
+        
+       var list =  msg.innerHTML;
+       document.getElementById("msg").innerHTML = list + '<li style=background:' + color + '">' + newListItem + '</li>'
+       if(color === "crimson"){
+           color = "orange";
+       } else {
+           color = "crimson";
+       }
+       msg.style="background:" + color;
         }
     </script>
 </html>
