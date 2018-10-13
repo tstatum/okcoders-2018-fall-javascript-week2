@@ -2,7 +2,16 @@
     <head>
         <title> My JavaScript Website</title>
     </head>
+    <body>
+        <input type="text" id="one">
+        <input type="text" id="two">
+        <button onclick="myMessage()">Click Me!</button>
+    </body>
     <script>
-    console.log("this is a message");
+        function myMessage(){
+        var message = "this is a message";
+    console.log(message);
+    alert(message);
+        }
     </script>
 </html>
